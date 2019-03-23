@@ -95,22 +95,22 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Ex
                 @Override
                 public void onClick(View v) {
 
-                    if (ActivitiesItem.selecter && !(ActivitiesItem.card_selected_position.contains((Integer)position))) {
+                    if (ActivitiesItem.selecter && !(ActivitiesItem.selected.contains((Integer)position))) {
                         exampleViewHolder.card_outer.setCardBackgroundColor(Color.rgb(98, 0, 238));
 
-                        ActivitiesItem.selected.add(position);
+                        ActivitiesItem.selected.add((Integer) position);
                         Toast.makeText(context, "" + ActivitiesItem.selected, Toast.LENGTH_SHORT).show();
-                        ActivitiesItem.card_selected_position.add((Integer) position);
+                        //ActivitiesItem.card_selected_position.add((Integer) position);
 
                     }
 
-                    else if (ActivitiesItem.card_selected_position.contains((Integer)position)){
+                    else if (ActivitiesItem.selected.contains((Integer)position)){
 
                         exampleViewHolder.card_outer.setCardBackgroundColor(Color.parseColor("#00000000"));
 
-                        ActivitiesItem.selected.remove(position);
+                        ActivitiesItem.selected.remove((Integer) position);
                         Toast.makeText(context, "" + ActivitiesItem.selected, Toast.LENGTH_SHORT).show();
-                        ActivitiesItem.card_selected_position.remove((Integer)position);
+                        //ActivitiesItem.card_selected_position.remove((Integer)position);
 
 
                     }
