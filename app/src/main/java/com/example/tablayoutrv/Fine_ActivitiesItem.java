@@ -1,9 +1,8 @@
 package com.example.tablayoutrv;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class ActivitiesItem {
+public class Fine_ActivitiesItem {
 
     private String booktitle_tv;
     private String accno_tv;
@@ -13,12 +12,9 @@ public class ActivitiesItem {
 
     static ArrayList<Integer> selected = new ArrayList<>();
     static boolean selecter = false;
-    static ArrayList<Integer> card_selected_position = new ArrayList<>();
 
 
-
-
-    public ActivitiesItem(String booktitle, String accno, String authername, String issuedate, String returndate) {
+    public Fine_ActivitiesItem(String booktitle, String accno, String authername, String issuedate, String returndate) {
 
         booktitle_tv = booktitle;
         accno_tv = accno;

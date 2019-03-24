@@ -26,24 +26,24 @@ public class FragmentFine extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fine_fragment, container, false);
 
-        ArrayList<ActivitiesItem> examplelist = new ArrayList<>();
+        ArrayList<Fine_ActivitiesItem> examplelist = new ArrayList<>();
 
 
 
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
-        examplelist.add(new ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
+        examplelist.add(new Fine_ActivitiesItem("Java","12457","shreyansh","08/03/2019","30/06/2019"));
 
 
         mrecyclerView = view.findViewById(R.id.issue_recyclerview);
         mrecyclerView.setHasFixedSize(true);
         mlayoutManager = new LinearLayoutManager(getActivity());
-        madapter = new ActivitiesAdapter(examplelist);
+        madapter = new Fine_ActivitiesAdapter(examplelist);
 
         mrecyclerView.setLayoutManager(mlayoutManager);
         mrecyclerView.setAdapter(madapter);
